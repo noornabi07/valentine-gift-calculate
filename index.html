@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine gift calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h2 class="text-5xl font-bold text-red-500 text-center mt-5">Valentine Budget: <span>00</span></h2>
+    </header>
+
+    <main>
+        <section class="flex justify-between px-40 mt-10">
+            <div class="flex">
+                <div class="text-center  border-2 p-2 rounded-lg drop-shadow-md">
+                    <img class="w-32 h-32 mx-auto" src="images/kitkat.png" alt="">
+                    <h2 class="text-2xl font-semibold mt-2">KitKat Chocolate</h2>
+                    <h3 class="text-3xl font-bold mt-2">Price: <span>200</span></h3>
+                    <input id="chocolate-input" class="py-2 px-4 border-4 border-gray-400 rounded my-2" type="text" placeholder="Type here quantity"><br>
+                    <button id="kitkat-btn" class="py-2 px-4 text-2xl font-semibold text-white rounded-lg bg-purple-600 mt-2 hover:bg-sky-700">Buy Now</button>
+                </div>
+
+                <div class="text-center mx-10  border-2 p-4 rounded-lg drop-shadow-md">
+                    <img class="w-32 h-32 mx-auto" src="images/image-removebg-preview.png" alt="">
+                    <h2 class="text-2xl font-semibold mt-2">Rose</h2>
+                    <h3 class="text-3xl font-bold">Price: <span>100</span></h3>
+                    <input id="rose-input" class="py-2 px-4 border-4 border-gray-400 rounded my-2" type="text" placeholder="Type here quantity"><br>
+                    <button id="rose-btn" class="py-2 px-4 text-2xl font-semibold text-white rounded-lg bg-purple-600 mt-2 hover:bg-sky-700">Buy Now</button>
+                </div>
+
+                <div class="text-center  border-2 p-4 rounded-lg drop-shadow-md">
+                    <img class="w-32 mx-auto" src="images/diary.jpg" alt="">
+                    <h2 class="text-2xl font-semibold mt-2">Diary</h2>
+                    <h3 class="text-3xl font-bold">Price: <span>100</span></h3>
+                    <input id="diary-input" class="py-2 px-4 border-4 border-gray-400 rounded my-2" type="text" placeholder="Type here quantity"><br>
+                    <button id="diary-btn" class="py-2 px-4 text-2xl font-semibold text-white rounded-lg bg-purple-600 mt-2 hover:bg-sky-700">Buy Now</button>
+                </div>
+
+            </div>
+
+            <div class="border-2 py-4 px-10 text-center">
+                <h2 class="text-5xl">Chocolate: <span id="chocolate-amount">00</span></h2>
+                <hr class="w-96 border-2 my-4">
+                <h2 class="text-5xl">Rose: <span id="rost-amount">00</span></h2>
+                <hr class="w-96 border-2 my-4">
+                <h2 class="text-5xl">Diary: <span id="diary-amount">00</span></h2>
+                <hr class="w-96 border-2 my-4">
+                <h2 class="text-5xl">Total: <span id="total-cost">00</span></h2>
+                <hr class="w-96 border-2 my-4">
+                <h2 class="text-2xl bg-sky-400 font-semibold my-2">Use Promo Code for 10% Discount</h2>
+                <input id="offer-input" class="py-2 px-4 mt-4 border-2 border-pink-500 rounded" type="text" placeholder="101">
+                <button id="apply-btn" class="py-2 px-4 text-2xl font-semibold text-white rounded-lg bg-purple-600 mt-2 hover:bg-sky-700 ml-2">Apply</button>
+                <h2 class="text-5xl mt-10">ALL COST : <span id="pay-amount">00</span></h2>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
